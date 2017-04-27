@@ -50,8 +50,13 @@
   FormHandler.prototype.addDecafHandler = function(fn){
     console.log('Setting input handler for form');
     this.$formElement.on('input','[name="coffeeorder"]','[id="strengthLevel"]',function(event){
-      var
-    })
+      var level=$('[id = "strengthLevel"]');
+      var order=$('[name="coffeeOrder"]');
+      var message = '';
+      if(order == 'decaf' && fn(order,level)){
+        message = order + 'with ' + level + ' strength is not a decaf drink';
+      }
+    });
   };
 
   App.FormHandler = FormHandler;
