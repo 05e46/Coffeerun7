@@ -20,5 +20,6 @@
     });
 
     formHandler.addInputHandler(Validation.isCompanyEmail);
-    
+
 })(window);
+ 
