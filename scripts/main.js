@@ -18,7 +18,8 @@
         myTruck.createOrder.call(myTruck,data);
         checkList.addRow.call(checkList,data);
     });
-
+    /*passing Validation .isCompanyEmail to addInputHandler method*/
     formHandler.addInputHandler(Validation.isCompanyEmail);
-
+    /*passing decaf check to decafHandler method, similar to action above */
+    formHandler.addDecafHandler(Validation.isDecaf)
 })(window);

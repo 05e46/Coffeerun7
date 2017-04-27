@@ -6,6 +6,10 @@
       return /.+@bignerdranch\.com$/.test(email);
     }
   };
+
+
+  
+
   App.Validation = Validation;
   window.App = App;
 })(window);

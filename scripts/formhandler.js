@@ -47,6 +47,13 @@
     });
   };
 
+  FormHandler.prototype.addDecafHandler = function(fn){
+    console.log('Setting input handler for form');
+    this.$formElement.on('input','[name="coffeeorder"]','[id="strengthLevel"]',function(event){
+      var
+    })
+  };
+
   App.FormHandler = FormHandler;
   window.App = App;
 })(window);
